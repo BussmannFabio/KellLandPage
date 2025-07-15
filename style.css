@@ -131,21 +131,54 @@ footer {
 
   h1 {
     font-size: 1.6rem;
+    text-align: center;
   }
 
   h2 {
     font-size: 1.25rem;
+    text-align: center;
   }
 
   h3 {
     font-size: 1.1rem;
+    text-align: center;
   }
 
   p, li, a {
     font-size: 0.95rem;
+    text-align: center;
   }
 
   section {
     margin-bottom: 1.5rem;
+  }
+
+  /* NOVO: Estilo para otimizar o header no mobile */
+  header .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  header .header-brand {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 6px 0;
   }
 }
