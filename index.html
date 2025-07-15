@@ -12,11 +12,9 @@
         theme: {
           extend: {
             colors: {
-              "pink-50": "#fdf2f8",
-              "pink-200": "#fbb6ce",
-              "pink-600": "#ec4899",
-              "pink-700": "#db2777",
-              "pink-800": "#be185d",
+              "brand-blue": "#1e3a8a",
+              "brand-pink": "#fce7f3",
+              "brand-pink-dark": "#db2777",
             },
             fontFamily: {
               sans: ["Inter", "sans-serif"],
@@ -32,129 +30,151 @@
     />
 
     <style>
+      html {
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      *, *::before, *::after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
-        background: linear-gradient(135deg, #fdf2f8 0%, #fbb6ce 120%);
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
     </style>
   </head>
 
-  <body class="text-gray-800 font-sans flex flex-col min-h-screen">
-    <!-- Cabeçalho -->
-    <header class="bg-pink-200 py-6 shadow-md text-center">
-      <h1 class="text-4xl font-bold text-pink-800">Kellynha</h1>
-      <p class="text-pink-700 mt-2 text-lg">
-        Moda íntima com conforto e capricho!
-      </p>
-    </header>
-
-    <!-- Conteúdo Principal -->
-    <main class="flex-1 container mx-auto px-6 lg:px-32 py-12 max-w-5xl">
-      <!-- Sobre -->
-      <section id="sobre" class="mb-16">
-        <h2 class="text-2xl font-semibold text-pink-600 mb-4">
-          Sobre a Nossa Empresa
-        </h2>
-        <p class="text-lg leading-relaxed text-justify">
-          Fundada em 1984, a Kellynha construiu sua história superando diversos
-          cenários econômicos e sempre mantendo o compromisso com a qualidade.
-          Trabalhamos com peças em algodão, priorizando conforto, durabilidade e
-          carinho em cada detalhe. Nossa tradição é oferecer moda íntima que
-          valoriza o bem-estar dos nossos clientes.
-        </p>
-      </section>
-
-      <!-- Divisor -->
-      <hr class="border-pink-300 my-12" />
-
-      <!-- Produtos -->
-      <section id="produtos" class="mb-16">
-        <h2 class="text-2xl font-semibold text-pink-600 mb-4">
-          Nossos Produtos
-        </h2>
-        <p class="mb-4 text-lg text-justify">
-          Trabalhamos com uma linha encantadora de moda íntima infantil e
-          adulta, sempre priorizando conforto, beleza e qualidade.
-        </p>
-        <ul class="list-disc list-inside space-y-2 text-lg pl-4">
-          <li>Moda íntima infantil delicada e divertida</li>
-          <li>Modelos adultos com conforto e estilo</li>
-          <li>Acessórios feitos com cuidado nos detalhes</li>
-        </ul>
-        <p class="mt-4 text-lg text-justify">
-          Quer conhecer toda a coleção?
-          <a href="#contato" class="text-pink-700 font-semibold underline"
-            >Entre em contato conosco</a
-          >.
-        </p>
-      </section>
-
-      <!-- Divisor -->
-      <hr class="border-pink-300 my-12" />
-
-      <!-- Galeria -->
-      <section id="galeria" class="mb-16 text-center">
-        <h2 class="text-2xl font-semibold text-pink-600 mb-6">
-          Conheça Nosso Espaço
-        </h2>
-        <div class="flex flex-wrap justify-center gap-6 mb-6">
-          <figure>
-            <img
-              src="assets/img1.jpg"
-              alt="Peça 1"
-              class="rounded-xl shadow-md w-80 max-w-full transition-transform hover:scale-105"
-            />
-          </figure>
-          <figure>
-            <img
-              src="assets/img2.jpg"
-              alt="Peça 2"
-              class="rounded-xl shadow-md w-80 max-w-full transition-transform hover:scale-105"
-            />
-          </figure>
-          <figure>
-            <img
-              src="assets/img3.jpg"
-              alt="Peça 3"
-              class="rounded-xl shadow-md w-80 max-w-full transition-transform hover:scale-105"
-            />
-          </figure>
+<body class="text-brand-blue font-sans">
+  <!-- Header com logo e navegação -->
+  <header class="bg-brand-pink shadow-md px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <img src="assets/kell-logo(1).png" alt="Logo Kellynha" class="w-20 h-auto" />
+        <div>
+          <h1 class="text-2xl lg:text-3xl font-bold text-brand-blue">Kellynha</h1>
+          <p class="text-brand-blue text-sm lg:text-base">Moda íntima com conforto e capricho!</p>
         </div>
-        <p class="text-lg max-w-2xl mx-auto text-justify">
-          Cada peça é produzida com carinho e atenção. Do corte ao acabamento,
-          tudo é feito para levar conforto e beleza a quem veste Kellynha.
-        </p>
-      </section>
+      </div>
+      <nav class="mt-2 lg:mt-0">
+        <ul class="flex flex-wrap justify-center gap-4 font-semibold text-sm lg:text-base">
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="#produtos" class="hover:underline">Produtos</a></li>
+          <li><a href="#contato" class="hover:underline">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Divisor -->
-      <hr class="border-pink-300 my-12" />
-
-      <!-- Contato -->
-      <section id="contato" class="text-center">
-        <h2 class="text-2xl font-semibold text-pink-700 mb-6">
-          Fale Conosco Agora
-        </h2>
-        <a
-          href="https://wa.me/5512991464471"
-          target="_blank"
-          class="mb-4 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 inline-block"
-        >
-          Chamar no WhatsApp
-        </a>
-      </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="bg-pink-200 text-center py-6 text-sm text-pink-800">
-      <p class="font-semibold">
-        &copy; Kellynha Ltda - Direitos reservados.
+  <!-- Conteúdo Principal -->
+  <main class="flex-1 container mx-auto px-6 lg:px-32 py-12 max-w-5xl">
+    
+    <!-- Sobre -->
+    <section id="sobre" class="mb-20 space-y-4">
+      <h2 class="text-2xl font-bold text-center mb-4">Sobre a Nossa Empresa</h2>
+      <p class="text-lg leading-relaxed text-justify">
+        Desde 1984, a Kellynha vem construindo sua história com foco em
+        <strong class="text-brand-blue-dark">qualidade</strong> e
+        <strong class="text-brand-blue-dark">conforto</strong>. Ao longo dos anos,
+        enfrentamos desafios, mas nunca abrimos mão de oferecer moda íntima
+        que une <strong class="text-brand-blue-dark">bem-estar</strong>,
+        <strong class="text-brand-blue-dark">beleza</strong> e
+        <strong class="text-brand-blue-dark">carinho</strong>.
       </p>
-      <p>CNPJ: 53.405.783/0001-50</p>
-      <p>WhatsApp: (12) 99146-4471 | Fixo: (12) 3122-6049</p>
-      <p>E-mail: lallynhaguara@gmail.com</p>
-      <p>
-        Rua Vereador Octaviano do Nascimento Monteiro, 365, Guaratinguetá/SP
+      <p class="text-lg leading-relaxed text-justify">
+        Nossas peças em algodão são pensadas para garantir
+        <strong class="text-brand-blue-dark">durabilidade</strong> e
+        <strong class="text-brand-blue-dark">conforto</strong>, com atenção especial
+        aos detalhes. Nossa missão é valorizar o
+        <strong class="text-brand-blue-dark">dia a dia</strong> de quem nos escolhe.
       </p>
-      <p>CEP: 12522-150</p>
-    </footer>
-  </body>
+    </section>
+
+    <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
+
+    <!-- Galeria (agora vem antes dos produtos) -->
+    <section id="galeria" class="mb-20 text-center">
+      <h2 class="text-2xl font-bold mb-6">Conheça Nosso Espaço</h2>
+      <div class="flex flex-wrap justify-center gap-6 mb-6">
+        <figure>
+          <img
+            src="assets/img1.jpg"
+            alt="Peça 1"
+            class="rounded-xl shadow-md w-80 max-w-full transition-transform hover:scale-105"
+          />
+        </figure>
+        <figure>
+          <img
+            src="assets/img2.jpg"
+            alt="Peça 2"
+            class="rounded-xl shadow-md w-80 max-w-full transition-transform hover:scale-105"
+          />
+        </figure>
+        <figure>
+          <img
+            src="assets/img3.jpg"
+            alt="Peça 3"
+            class="rounded-xl shadow-md w-80 max-w-full transition-transform hover:scale-105"
+          />
+        </figure>
+      </div>
+      <p class="text-lg max-w-2xl mx-auto text-justify">
+        Cada peça é produzida com carinho e atenção. Do corte ao acabamento,
+        tudo é feito para levar conforto e beleza a quem veste Kellynha.
+      </p>
+    </section>
+
+    <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
+
+    <!-- Produtos (agora após a galeria) -->
+    <section id="produtos" class="mb-20">
+      <h2 class="text-2xl font-bold text-center mb-6">Nossos Produtos</h2>
+      <p class="text-lg text-justify mb-4">
+        Trabalhamos com uma linha encantadora de moda íntima infantil e
+        adulta, sempre priorizando conforto, beleza e qualidade.
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-lg pl-4">
+        <li>Moda íntima infantil delicada e divertida</li>
+        <li>Modelos adultos com conforto e estilo</li>
+        <li>Acessórios feitos com cuidado nos detalhes</li>
+      </ul>
+    </section>
+
+    <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
+
+    <!-- Contato -->
+    <section id="contato" class="text-center mb-20">
+      <h2 class="text-2xl font-bold mb-6">Fale Conosco Agora</h2>
+      <a
+        href="https://wa.me/5512991464471"
+        target="_blank"
+        class="bg-brand-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 inline-block"
+      >
+        Chamar no WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <!-- Rodapé com logo -->
+  <footer class="bg-brand-pink text-center py-8 text-sm text-brand-blue mt-auto">
+    <div class="max-w-5xl mx-auto flex flex-col items-center gap-4">
+      <img src="assets/kell-logo(1).png" alt="Logo Kellynha" class="w-20 h-auto" />
+      <div class="space-y-1">
+        <p class="font-semibold">&copy; Kellynha Ltda - Todos os direitos reservados.</p>
+        <p>CNPJ: 53.405.783/0001-50</p>
+        <p>WhatsApp: (12) 99146-4471 | Fixo: (12) 3122-6049</p>
+        <p>E-mail: lallynhaguara@gmail.com</p>
+        <p>Rua Vereador Octaviano do Nascimento Monteiro, 365 – Guaratinguetá/SP</p>
+        <p>CEP: 12522-150</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
