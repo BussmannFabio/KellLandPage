@@ -28,79 +28,90 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
-  <style>
-    html {
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: inherit;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
+  <style src="style.css"></style>
 </head>
 
 <body class="text-brand-blue font-sans">
   <!-- Header com logo e navegação -->
-<header class="bg-brand-pink shadow-md px-4 py-4">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 header-container">
-    <div class="flex items-center gap-4 header-brand">
-      <!-- A logo será sempre exibida -->
-      <img src="assets/kell-logo(1).png" alt="Logo Kellynha" class="w-20 h-auto" />
+  <header class="bg-brand-pink shadow-md px-4 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 header-container">
+      <div class="flex items-center gap-4 header-brand">
+        <!-- A logo será sempre exibida -->
+        <img src="assets/kell-logo(1).png" alt="Logo Kellynha" class="w-20 h-auto" />
 
-      <!-- Este h1 será ocultado no mobile com classe 'hidden' e visível em sm+ -->
-      <div class="hidden sm:block">
-        <h1 class="text-xl sm:text-2xl font-bold text-brand-blue">Kellynha</h1>
-        <p class="text-sm sm:text-base text-brand-blue">Moda íntima com conforto e capricho!</p>
+        <!-- Este h1 será ocultado no mobile com classe 'hidden' e visível em sm+ -->
+        <div class="hidden sm:block">
+          <h1 class="text-xl sm:text-2xl font-bold text-brand-blue">Kellynha</h1>
+          <p class="text-sm sm:text-base text-brand-blue">Moda íntima com conforto e capricho!</p>
+        </div>
       </div>
+
+      <!-- Menu de navegação -->
+      <nav class="w-full sm:w-auto text-center">
+        <ul
+          class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 font-semibold text-sm sm:text-base">
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="#produtos" class="hover:underline">Produtos</a></li>
+          <li><a href="#contato" class="hover:underline">Contato</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Menu de navegação -->
-    <nav class="w-full sm:w-auto text-center">
-      <ul class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 font-semibold text-sm sm:text-base">
-        <li><a href="#sobre" class="hover:underline">Sobre</a></li>
-        <li><a href="#produtos" class="hover:underline">Produtos</a></li>
-        <li><a href="#contato" class="hover:underline">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
 
+  <section id="contato-hero" class="bg-brand-pink py-20">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-brand-blue mb-4">Precisa de ajuda agora?</h2>
+      <p class="text-lg mb-8">Fale diretamente conosco pelo <strong>WhatsApp!</strong></p>
+      <a href="https://wa.me/5512991464471" target="_blank"
+        class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg transition">
+        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M..."></path>
+        </svg>
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
   <!-- Conteúdo Principal -->
   <main class="flex-1 container mx-auto px-6 lg:px-32 py-12 max-w-5xl">
 
     <!-- Sobre -->
-    <section id="sobre" class="mb-20 space-y-4">
+    <section id="sobre" class="mb-20 space-y-6">
       <h2 class="text-2xl font-bold text-center mb-4">Sobre a Nossa Empresa</h2>
-      <p class="text-lg leading-relaxed text-justify">
-        Desde 1984, a Kellynha vem construindo sua história com foco em
-        <strong class="text-brand-blue-dark">qualidade</strong> e
-        <strong class="text-brand-blue-dark">conforto</strong>. Ao longo dos anos,
-        enfrentamos desafios, mas nunca abrimos mão de oferecer moda íntima
-        que une <strong class="text-brand-blue-dark">bem-estar</strong>,
-        <strong class="text-brand-blue-dark">beleza</strong> e
-        <strong class="text-brand-blue-dark">carinho</strong>.
-      </p>
-      <p class="text-lg leading-relaxed text-justify">
-        Nossas peças em algodão são pensadas para garantir
-        <strong class="text-brand-blue-dark">durabilidade</strong> e
-        <strong class="text-brand-blue-dark">conforto</strong>, com atenção especial
-        aos detalhes. Nossa missão é valorizar o
-        <strong class="text-brand-blue-dark">dia a dia</strong> de quem nos escolhe.
-      </p>
+
+      <!-- Container com imagem + texto -->
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-8">
+        <!-- Texto -->
+        <div class="flex-1 space-y-4 text-justify">
+          <p class="text-lg leading-relaxed">
+            Desde 1984, a
+            <strong class="text-brand-blue-dark">Kellynha</strong>
+            vem construindo sua história com foco em
+            <strong class="text-brand-blue-dark">qualidade</strong> e
+            <strong class="text-brand-blue-dark">conforto</strong>. Ao longo dos anos,
+            enfrentamos desafios, mas nunca abrimos mão de oferecer moda íntima
+            que une <strong class="text-brand-blue-dark">bem-estar</strong>,
+            <strong class="text-brand-blue-dark">beleza</strong> e
+            <strong class="text-brand-blue-dark">carinho</strong>.
+          </p>
+          <p class="text-lg leading-relaxed">
+            Nossas peças em algodão são pensadas para garantir
+            <strong class="text-brand-blue-dark">durabilidade</strong> e
+            <strong class="text-brand-blue-dark">conforto</strong>, com atenção especial
+            aos detalhes. Nossa missão é valorizar o
+            <strong class="text-brand-blue-dark">dia a dia</strong> de quem nos escolhe.
+          </p>
+        </div>
+
+        <!-- Imagem da fábrica -->
+        <div class="flex-1">
+          <img src="assets/fabrica.png" alt="Foto da fábrica da Kellynha"
+            class="rounded-xl shadow-lg w-full object-cover max-h-[400px] transition-transform duration-300 hover:scale-105" />
+        </div>
+      </div>
     </section>
+
 
     <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
 
@@ -146,22 +157,41 @@
       </ul>
       <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <!-- Card Feminino -->
+        <!-- Linha Feminina -->
         <div class="bg-brand-pink rounded-xl shadow-md p-4 text-center">
-          <img id="img-fem" src="assets/fem1.png" alt="Moda íntima feminina"
+          <img id="img-fem" src="assets/calcinha280.jpg" alt="Moda íntima feminina"
             class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
           <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Feminina</h3>
           <p class="text-sm text-gray-600">Conforto e delicadeza.</p>
         </div>
 
-        <!-- Card Masculino -->
+        <!-- Linha Masculina -->
         <div class="bg-brand-blue-light rounded-xl shadow-md p-4 text-center">
           <img id="img-masc" src="assets/masc1.png" alt="Moda íntima masculina"
             class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
           <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Masculina</h3>
           <p class="text-sm text-gray-600">Peças confortáveis para todos os momentos.</p>
         </div>
-      </div>
+
+        <!-- Linha Masculina Adulto -->
+        <div class="bg-brand-blue-light rounded-xl shadow-md p-4 text-center">
+          <img id="img-masc-a" src="assets/cuecaslipper.webp" alt="Moda íntima masculina adulto"
+            class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
+          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Masculina Adulto</h3>
+          <p class="text-sm text-gray-600">Peças confortáveis para todos os momentos.</p>
+        </div>
+
+        <!-- Linha Feminina Adulto -->
+        <div class="bg-brand-pink rounded-xl shadow-md p-4 text-center">
+          <img id="img-fem-a" src="assets/calcinhaadult3.webp" alt="Moda íntima feminina adulto"
+            class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
+          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Feminina Adulto</h3>
+          <p class="text-sm text-gray-600">Conforto e delicadeza.</p>
+        </div>
+        <a
+          class="col-span-1 sm:col-span-2 bg-green-100 rounded-xl p-4 shadow-md border border-brand-pink text-center">
+          Temos mais opções de estampas e modelos, entre já em contato!
+        </a>
     </section>
 
     <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
@@ -192,4 +222,5 @@
   </footer>
 </body>
 <script src="main.js"></script>
+
 </html>

@@ -1,184 +1,21 @@
-/* RESET BÁSICO */
-html {
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
-}
+    html {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
 
-/* ESTILO GERAL */
-body {
-  background: linear-gradient(135deg, #fdf2f8 0%, #fbb6ce 120%);
-  color: #3b3b3b;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
-}
-
-/* TIPOGRAFIA */
-h1, h2, h3 {
-  font-weight: 700;
-  line-height: 1.3;
-  color: #be185d;
-  margin-bottom: 0.5rem;
-}
-
-p, li, a {
-  font-size: 1rem;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.25rem;
-  margin-top: 0.5rem;
-}
-
-/* LINKS */
-a {
-  color: #db2777;
-  font-weight: 600;
-  text-decoration: underline;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #be185d;
-}
-
-/* GALERIA */
-.galeria-simples {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 2rem 0;
-}
-
-.galeria-simples img {
-  width: clamp(260px, 30vw, 320px);
-  max-width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  object-fit: cover;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.galeria-simples img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* BOTÃO WHATSAPP */
-.botao-whatsapp {
-  background-color: #22c55e;
-  color: white;
-  font-weight: bold;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.botao-whatsapp:hover {
-  background-color: #16a34a;
-  transform: scale(1.03);
-}
-
-/* RODAPÉ */
-footer {
-  background-color: #fbb6ce;
-  text-align: center;
-  padding: 1rem;
-  color: #be185d;
-  font-size: 0.9rem;
-  margin-top: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-/* RESPONSIVIDADE PARA CELULARES */
-@media (max-width: 600px) {
-  .galeria-simples {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .galeria-simples img {
-    width: 90vw;
-    max-width: 320px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  body, main {
-    padding: 0 2vw;
-  }
-
-  footer {
-    font-size: 0.8rem;
-    padding: 0.5rem;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  p, li, a {
-    font-size: 0.95rem;
-    text-align: center;
-  }
-
-  section {
-    margin-bottom: 1.5rem;
-  }
-
-  /* NOVO: Estilo para otimizar o header no mobile */
-  header .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    text-align: center;
-  }
-
-  header .header-brand {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 6px;
-    width: 100%;
-    padding-top: 8px;
-  }
-
-  header nav ul li {
-    width: 100%;
-  }
-
-  header nav ul li a {
-    display: block;
-    padding: 6px 0;
-  }
-}
+    body {
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  
