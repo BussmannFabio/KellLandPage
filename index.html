@@ -33,7 +33,7 @@
 
 <body class="text-brand-blue font-sans">
   <!-- Header com logo e navegação -->
-  <header class="bg-brand-pink shadow-md px-4 py-4">
+  <header class="bg-brand-pink shadow-md px-4 py-8">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 header-container">
       <div class="flex items-center gap-4 header-brand">
         <!-- A logo será sempre exibida -->
@@ -57,7 +57,8 @@
       </nav>
     </div>
   </header>
-  <section id="contato-hero" class="bg-green-100 py-20">
+  
+  <section id="contato-hero" class="bg-pink-100 py-20">
     <div class="max-w-4xl mx-auto text-center px-6">
       <h2 class="text-3xl font-bold text-brand-blue mb-4">Precisa de ajuda?</h2>
       <p class="text-lg mb-8">Fale diretamente conosco pelo <strong>WhatsApp!</strong></p>
@@ -72,17 +73,17 @@
   </section>
   <!-- Conteúdo Principal -->
   <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
-  
+
   <main class="flex-1 container mx-auto px-6 lg:px-32 py-12 max-w-5xl">
 
     <!-- Produtos -->
     <section id="produtos" class="mb-20">
       <h2 class="text-2xl font-bold text-center mb-6">Nossos Produtos</h2>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg mt-6">
-        <li class="bg-brand-pink text-brand-blue rounded-xl p-4 shadow-md border border-brand-pink text-center">
+        <li class="bg-brand-blue-light text-brand-blue rounded-xl p-4 shadow-md border border-brand-pink text-center">
           Moda íntima infantil delicada e divertida.
         </li>
-        <li class="bg-brand-pink text-brand-blue rounded-xl p-4 shadow-md border border-brand-pink text-center">
+        <li class="bg-brand-blue-light text-brand-blue rounded-xl p-4 shadow-md border border-brand-pink text-center">
           Modelos adultos com conforto e estilo.
         </li>
         <li
@@ -92,11 +93,20 @@
       </ul>
       <hr class="my-12 border-t-2 border-brand-pink w-1/2 mx-auto" />
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+        <!-- Linha Feminina Adulto -->
+        <div class="bg-brand-pink rounded-xl shadow-md p-4 text-center">
+          <img id="img-fem-a" src="assets/calcinhaadult3.webp" alt="Moda íntima feminina adulto"
+            class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
+          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Feminina Adulto</h3>
+          <p class="text-sm text-gray-600">Conforto e delicadeza.</p>
+        </div>
+
         <!-- Linha Feminina -->
         <div class="bg-brand-pink rounded-xl shadow-md p-4 text-center">
           <img id="img-fem" src="assets/calcinha280.jpg" alt="Moda íntima feminina"
             class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
-          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Feminina</h3>
+          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Feminina Infantil</h3>
           <p class="text-sm text-gray-600">Conforto e delicadeza.</p>
         </div>
 
@@ -104,7 +114,7 @@
         <div class="bg-brand-blue-light rounded-xl shadow-md p-4 text-center">
           <img id="img-masc" src="assets/masc1.png" alt="Moda íntima masculina"
             class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
-          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Masculina</h3>
+          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Masculina Infantil</h3>
           <p class="text-sm text-gray-600">Peças confortáveis para todos os momentos.</p>
         </div>
 
@@ -115,16 +125,8 @@
           <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Masculina Adulto</h3>
           <p class="text-sm text-gray-600">Peças confortáveis para todos os momentos.</p>
         </div>
-
-        <!-- Linha Feminina Adulto -->
-        <div class="bg-brand-pink rounded-xl shadow-md p-4 text-center">
-          <img id="img-fem-a" src="assets/calcinhaadult3.webp" alt="Moda íntima feminina adulto"
-            class="rounded-md mx-auto mb-4 h-56 object-cover transition duration-500" />
-          <h3 class="text-lg font-bold mb-2 text-brand-blue">Linha Feminina Adulto</h3>
-          <p class="text-sm text-gray-600">Conforto e delicadeza.</p>
-        </div>
         <a class="col-span-1 sm:col-span-2 bg-green-100 rounded-xl p-4 shadow-md border border-brand-pink text-center">
-          Temos mais opções de estampas e modelos, entre já em contato!
+          <strong>Temos mais opções de estampas e modelos, entre já em contato!</strong>
         </a>
     </section>
 
@@ -203,19 +205,48 @@
   </main>
 
   <!-- Rodapé com logo -->
-  <footer class="bg-brand-pink text-center py-8 text-sm text-brand-blue mt-auto">
-    <div class="max-w-5xl mx-auto flex flex-col items-center gap-4">
-      <img src="assets/kell-logo(1).png" alt="Logo Kellynha" class="w-20 h-auto" />
-      <div class="space-y-1">
-        <p class="font-semibold">&copy; Kellynha Ltda - Todos os direitos reservados.</p>
-        <p>CNPJ: 53.405.783/0001-50</p>
-        <p>WhatsApp: (12) 99146-4471 | Fixo: (12) 3122-6049</p>
-        <p>E-mail: lallynhaguara@gmail.com</p>
-        <p>Rua Vereador Octaviano do Nascimento Monteiro, 365 – Guaratinguetá/SP</p>
-        <p>CEP: 12522-150</p>
-      </div>
+
+<footer class="bg-brand-pink text-brand-blue text-sm mt-auto pt-10">
+
+  <!-- Logo centralizada no topo -->
+  <div class="flex justify-center mb-6">
+    <img src="assets/kell-logo(1).png" alt="Logo Kellynha" class="w-28 h-auto mb-8" />
+  </div>
+
+  <!-- Informações em colunas -->
+  <div class="max-w-6xl mx-auto px-6 pb-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+    
+    <!-- Sobre -->
+    <div class="space-y-2">
+      <h3 class="font-bold text-base mb-3">Kellynha Ltda</h3>
+      <p>&copy; Todos os direitos reservados</p>
+      <p class="text-xs text-gray-600">CNPJ: 53.405.783/0001-50</p>
     </div>
-  </footer>
+
+    <!-- Contato -->
+    <div class="space-y-3">
+      <h3 class="font-bold text-base mb-2">Contato</h3>
+      <p>WhatsApp: <a href="https://wa.me/5512991464471" class="underline hover:text-brand-blue-dark">(12) 99146-4471</a></p>
+      <p>Fixo: (12) 3122-6049</p>
+      <p>E-mail: <a href="mailto:lallynhaguara@gmail.com" class="underline hover:text-brand-blue-dark">lallynhaguara@gmail.com</a></p>
+    </div>
+
+    <!-- Endereço -->
+    <div class="space-y-3">
+      <h3 class="font-bold text-base mb-2">Endereço</h3>
+      <p>Rua Vereador Octaviano do Nascimento Monteiro, 365</p>
+      <p>Guaratinguetá/SP</p>
+      <p>CEP: 12522-150</p>
+    </div>
+
+  </div>
+
+  <!-- Linha final -->
+  <div class="border-t border-brand-blue-light mt-6 pt-4 text-center text-xs text-gray-500">
+    Desenvolvido com ❤️ por Kellynha
+  </div>
+</footer>
+
 </body>
 <script src="main.js"></script>
 
