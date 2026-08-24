@@ -184,7 +184,7 @@ button,input,textarea { font:inherit; }
   .brand,.site-nav,.text-link,.hero h1,.hero-proof strong,.hero-seal,
   .section-heading h2,.about-copy h2,.product-copy h3,.product-copy a,
   .product-cta strong,.about-values strong { color:#dedbf5; }
-  .brand img { padding:2px; border-radius:50%; background:#f8f6f1; }
+  .brand img { padding:2px; border-radius:3px; background:#f8f6f1; object-fit:contain; }
   .site-nav>a:not(.button)::after,.menu-button span:not(.sr-only),
   .product-copy::before { background:#aaa5dd; }
   .site-nav { background:transparent; }
