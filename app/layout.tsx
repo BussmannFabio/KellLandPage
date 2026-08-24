@@ -3,8 +3,10 @@ import Script from 'next/script';
 import '../style.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kellynha-moda-intima.fabio12513.chatgpt.site'),
   title: 'Kellynha | Conforto que faz parte da sua história',
   description: 'Moda íntima para toda a família, produzida com conforto, qualidade e carinho desde 1984.',
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Kellynha | Conforto que faz parte da sua história',
     description: 'Moda íntima para toda a família, feita com cuidado desde 1984.',
